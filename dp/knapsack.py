@@ -1,3 +1,6 @@
+# Solutions for problems from Educative.io
+
+
 # Solution for 0/1 knapsack using a bottom-up approach 
 def solve_knapsack(profits, weights, capacity):
   
