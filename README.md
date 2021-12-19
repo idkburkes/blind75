@@ -191,3 +191,4 @@ In addition, you should have a good grasp on common algorithms such as:
 - [Cracking the Coding Interview PDF](https://github.com/chaudharyachint08/Self-Learning/blob/master/BOOKS/DSA%20%26%20Competitive%20Programming/Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-and-Solutions.pdf)
 - [Sean Prashad's Leetcode Patterns](https://seanprashad.com/leetcode-patterns/)
 - [Top Interview Questions - Leetcode Medium Collection](https://leetcode.com/explore/interview/card/top-interview-questions-medium/)
+- [Technical Interview Handbook - Interview Prep Materials for Busy Engineers](https://techinterviewhandbook.org/)
