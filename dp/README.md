@@ -7,7 +7,7 @@ We can use a top-down approach where we iteratively fill a matrix for solutions 
 Atlernatively, we can use MEMOIZATION where we store previously answered subproblems in a matrix/map to avoid solving subproblems more than once. Memoization solutions are usually recursive or utilize DFS.
 
 
-- [ ] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+- [X] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 - [X] [Coin Change](https://leetcode.com/problems/coin-change/)
 - [ ] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 - [ ] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
