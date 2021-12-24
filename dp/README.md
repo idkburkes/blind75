@@ -16,7 +16,7 @@ Atlernatively, we can use MEMOIZATION where we store previously answered subprob
 - [X] [House Robber](https://leetcode.com/problems/house-robber/)
 - [ ] [House Robber II](https://leetcode.com/problems/house-robber-ii/)
 - [ ] [Decode Ways](https://leetcode.com/problems/decode-ways/)
-- [ ] [Unique Paths](https://leetcode.com/problems/unique-paths/)
+- [X] [Unique Paths](https://leetcode.com/problems/unique-paths/)
 - [X] [Jump Game](https://leetcode.com/problems/jump-game/)
 
 
