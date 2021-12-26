@@ -30,7 +30,7 @@
 - [X] [Coin Change](https://leetcode.com/problems/coin-change/)
 - [ ] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 - [ ] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
-- [ ] [Word Break Problem](https://leetcode.com/problems/word-break/)
+- [X] [Word Break Problem](https://leetcode.com/problems/word-break/)
 - [x] [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)
 - [X] [House Robber](https://leetcode.com/problems/house-robber/)
 - [ ] [House Robber II](https://leetcode.com/problems/house-robber-ii/)
