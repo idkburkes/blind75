@@ -192,3 +192,4 @@ In addition, you should have a good grasp on common algorithms such as:
 - [Sean Prashad's Leetcode Patterns](https://seanprashad.com/leetcode-patterns/)
 - [Top Interview Questions - Leetcode Medium Collection](https://leetcode.com/explore/interview/card/top-interview-questions-medium/)
 - [Technical Interview Handbook - Interview Prep Materials for Busy Engineers](https://techinterviewhandbook.org/)
+- [Comprehensive Data Structure and Algorithm Study Guide](https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide)
