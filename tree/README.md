@@ -7,19 +7,51 @@
 - [X] [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 - [ ] [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 - [X] [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
-- [ ] [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+- [X] [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - [ ] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - [ ] [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
-- [ ] [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+- [X] [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - [ ] [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
 - [ ] [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
 - [ ] [Word Search II](https://leetcode.com/problems/word-search-ii/)
 
 
+
+### Construct Binary Tree from Preorder and Inorder Traversal ###
+
+![build-tree](./build-tree.png)
+ 
+ Image shows how the preorder will always have the root node at the front, while the inorder traversal will split the tree into a left half and a right half. The problem is solved with a simple recursive solution
+ ```
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+        if inorder:
+            i = inorder.index(preorder.pop(0))
+            root = TreeNode(inorder[i])
+            root.left = self.buildTree(preorder, inorder[0:i])
+            root.right = self.buildTree(preorder, inorder[i+1:])
+            return root
+ ```
+
+
 ### isSubtree ###
 For determining if a tree contains a subtree, it is useful to use an auxilliary function that looks like this. Here we'll check if the current node vals are the same, as well as all the children nodes 
 
-```   def isMatch(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+```  
+ def isMatch(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         if p is None or q is None:
             return p == q
-        return p.val == q.val and self.isMatch(p.left, q.left) and self.isMatch(p.right, q.right)```
+        return p.val == q.val and self.isMatch(p.left, q.left) and self.isMatch(p.right, q.right)
+```
+
+### Lowest Common Ancestor ###
+Remember to use the sorting property of binary search trees to your advantage. An iterative solution to lowest common ancestor
+```
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        while root:
+            if root.val > p.val and root.val > q.val:
+                root = root.left
+            elif root.val < p.val and root.val < q.val:
+                root = root.right
+            else:
+                return root
+```
