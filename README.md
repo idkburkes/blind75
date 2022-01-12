@@ -1,4 +1,89 @@
 
+# 33/75 Completed #
+- [] Array (10)
+- [] Binary (5)
+- [] Dynamic Programming (11)
+- [] Graph (8)
+- [] Interval (5)
+- [] Linked-List (6)
+- [] Matrix (4)
+- [] String (10)
+- [] Tree (14)
+- [X] Heap (3)
+
+## Tips to Consider
+
+```
+If input array is sorted then
+    - Binary search
+    - Two pointers
+
+If asked for all permutations/subsets then
+    - Backtracking
+
+If given a tree then
+    - DFS
+    - BFS
+
+If given a graph then
+    - DFS
+    - BFS
+
+If given a linked list then
+    - Two pointers
+
+If recursion is banned then
+    - Stack
+
+If must solve in-place then
+    - Swap corresponding values
+    - Store one or more different values in the same pointer
+
+If asked for maximum/minumum subarray/subset/options then
+    - Dynamic programming
+
+If asked for top/least K items then
+    - Heap
+
+If asked for common strings then
+    - Map
+    - Trie
+
+Else
+    - Map/Set for O(1) time & O(n) space
+    - Sort input for O(nlogn) time and O(1) space
+```
+It is highly recommended to read chapters 1, 2, 3, 4, 8, and 10 of [Cracking The Coding Interview]
+to familiarize yourself with the following data structures and their operations:
+
+- Arrays
+- Maps
+- Linked Lists
+- Queues
+- Heaps
+- Stacks
+- Trees
+- Graphs
+
+In addition, you should have a good grasp on common algorithms such as:
+
+- Breadth-first search
+- Depth-first search
+- Binary search
+- Recursion
+
+
+## Important Links:
+- [14 Patterns to Ace Any Coding Interview Question](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
+- [Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview/Y5zDWlVRz2p)
+- [Cracking the Coding Interview PDF](https://github.com/chaudharyachint08/Self-Learning/blob/master/BOOKS/DSA%20%26%20Competitive%20Programming/Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-and-Solutions.pdf)
+- [Sean Prashad's Leetcode Patterns](https://seanprashad.com/leetcode-patterns/)
+- [Top Interview Questions - Leetcode Medium Collection](https://leetcode.com/explore/interview/card/top-interview-questions-medium/)
+- [Technical Interview Handbook - Interview Prep Materials for Busy Engineers](https://techinterviewhandbook.org/)
+- [Comprehensive Data Structure and Algorithm Study Guide](https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide)
+
+
+
 ## Array
 
 - [X] [Two Sum](https://leetcode.com/problems/two-sum/)
@@ -123,73 +208,3 @@
 - [X] [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
 
 
-## Tips to Consider
-
-```
-If input array is sorted then
-    - Binary search
-    - Two pointers
-
-If asked for all permutations/subsets then
-    - Backtracking
-
-If given a tree then
-    - DFS
-    - BFS
-
-If given a graph then
-    - DFS
-    - BFS
-
-If given a linked list then
-    - Two pointers
-
-If recursion is banned then
-    - Stack
-
-If must solve in-place then
-    - Swap corresponding values
-    - Store one or more different values in the same pointer
-
-If asked for maximum/minumum subarray/subset/options then
-    - Dynamic programming
-
-If asked for top/least K items then
-    - Heap
-
-If asked for common strings then
-    - Map
-    - Trie
-
-Else
-    - Map/Set for O(1) time & O(n) space
-    - Sort input for O(nlogn) time and O(1) space
-```
-It is highly recommended to read chapters 1, 2, 3, 4, 8, and 10 of [Cracking The Coding Interview]
-to familiarize yourself with the following data structures and their operations:
-
-- Arrays
-- Maps
-- Linked Lists
-- Queues
-- Heaps
-- Stacks
-- Trees
-- Graphs
-
-In addition, you should have a good grasp on common algorithms such as:
-
-- Breadth-first search
-- Depth-first search
-- Binary search
-- Recursion
-
-
-## Important Links:
-- [14 Patterns to Ace Any Coding Interview Question](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
-- [Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview/Y5zDWlVRz2p)
-- [Cracking the Coding Interview PDF](https://github.com/chaudharyachint08/Self-Learning/blob/master/BOOKS/DSA%20%26%20Competitive%20Programming/Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-and-Solutions.pdf)
-- [Sean Prashad's Leetcode Patterns](https://seanprashad.com/leetcode-patterns/)
-- [Top Interview Questions - Leetcode Medium Collection](https://leetcode.com/explore/interview/card/top-interview-questions-medium/)
-- [Technical Interview Handbook - Interview Prep Materials for Busy Engineers](https://techinterviewhandbook.org/)
-- [Comprehensive Data Structure and Algorithm Study Guide](https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide)
