@@ -8,7 +8,7 @@
 - [ ] [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 - [X] [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
 - [X] [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
-- [ ] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+- [X] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - [ ] [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 - [X] [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - [ ] [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
@@ -54,4 +54,17 @@ Remember to use the sorting property of binary search trees to your advantage. A
                 root = root.right
             else:
                 return root
+```
+
+### Validate Binary Search Tree ##
+Keep track of a lessThan and greaterThan for each recursive call to the left child and right child
+
+```
+    def isValidBST(self, root: Optional[TreeNode], lessThan = float('inf'), greaterThan = -float('inf')) -> bool:
+        if not root:
+            return True
+        elif root.val >= lessThan or root.val <= greaterThan:
+            return False
+        else:
+            return self.isValidBST(root.left, min(root.val, lessThan), greaterThan) and self.isValidBST(root.right, lessThan, max(root.val, greaterThan))
 ```

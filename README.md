@@ -1,14 +1,14 @@
 
-# 33/75 Completed #
-- [] Array (10)
-- [] Binary (5)
-- [] Dynamic Programming (11)
-- [] Graph (8)
-- [] Interval (5)
-- [] Linked-List (6)
-- [] Matrix (4)
-- [] String (10)
-- [] Tree (14)
+# 34/75 Completed #
+- [ ] Array (10)
+- [ ] Binary (5)
+- [ ] Dynamic Programming (11)
+- [ ] Graph (8)
+- [ ] Interval (5)
+- [ ] Linked-List (6)
+- [ ] Matrix (4)
+- [ ] String (10)
+- [ ] Tree (14)
 - [X] Heap (3)
 
 ## Tips to Consider
@@ -192,7 +192,7 @@ In addition, you should have a good grasp on common algorithms such as:
 - [ ] [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 - [X] [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
 - [X] [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
-- [ ] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+- [X] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - [ ] [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 - [X] [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - [ ] [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
