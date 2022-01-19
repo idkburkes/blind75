@@ -68,3 +68,23 @@ Keep track of a lessThan and greaterThan for each recursive call to the left chi
         else:
             return self.isValidBST(root.left, min(root.val, lessThan), greaterThan) and self.isValidBST(root.right, lessThan, max(root.val, greaterThan))
 ```
+
+
+### Iterative Inorder Traversal (kth smallest in BST) ###
+I should be comfortable using this pattern for iterative inorder traversal in trees.
+The key here is to use a stack, what I got tripped up on was how to evaluate the right side of subtrees. The solution is to make the last line in the outer while loop ```cur = cur.right```. What this does is performs inorder traversal but also skips to the top of the stack if ```cur.right``` is null 
+
+```
+def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+        stack = []
+        count = 0
+        node = root
+        while stack or node:
+            while node:
+                stack.append(node)
+                node = node.left
+            node = stack.pop()
+            count += 1
+            if count == k: return node.val
+            cur = cur.right
+```
