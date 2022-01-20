@@ -9,7 +9,7 @@ Atlernatively, we can use MEMOIZATION where we store previously answered subprob
 
 - [X] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 - [X] [Coin Change](https://leetcode.com/problems/coin-change/)
-- [ ] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+- [X] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 - [ ] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 - [X] [Word Break Problem](https://leetcode.com/problems/word-break/)
 - [X] [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)
@@ -28,6 +28,24 @@ Completed DP Problems not on Blind75
 List of all leetcode problems that follow knapsack pattern
 [Leetcode Discussion](https://leetcode.com/discuss/study-guide/1200320/Thief-with-a-knapsack-a-series-of-crimes)
 
+### Longest Increasing Subsequence ###
+[Neetcode Solution](https://www.youtube.com/watch?v=cjWnW0hdF1Y)
+
+Tip for longest increasing subsequence is to think about the base case with the last index only having a length of 1 and working backwards. My solution has O(n^2) time but it is much better than the O(2^n) for naive recursive solution (at each step we either have the choice of including a number in the increasing subsequence or excluding). At each index moving backwards the max increasing subsequence is max of 1 + dp[j] where j is every index from the current index to the end ONLY IF nums[i] is lower than nums[j].
+This is the portion that makes the algorithm asymptotically O(n^2)
+Since the dp array is 1D we can just use the max function to find the max increasing subsequence that was found  
+
+```python
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        dp = [1] * len(nums)
+
+        for i in range(len(nums)-1, -1, -1):
+            for j in range(i+1,len(nums)):
+                if nums[i] < nums[j]:
+                    dp[i] = max(1, dp[i], 1 + dp[j])
+        return max(dp)
+```
 
 ### How to approach most DP problems ###
 
