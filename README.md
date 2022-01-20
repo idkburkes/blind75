@@ -1,8 +1,8 @@
 
-# 42/75 Completed #
+# 43/75 Completed #
 - [ ] Array (10)
 - [ ] Binary (5)
-- [ ] Dynamic Programming (11)
+- [X] Dynamic Programming (11)
 - [ ] Graph (8)
 - [ ] Interval (5)
 - [X] Linked-List (6)
@@ -114,7 +114,7 @@ In addition, you should have a good grasp on common algorithms such as:
 - [X] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 - [X] [Coin Change](https://leetcode.com/problems/coin-change/)
 - [X] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
-- [ ] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+- [X] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 - [X] [Word Break Problem](https://leetcode.com/problems/word-break/)
 - [x] [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)
 - [X] [House Robber](https://leetcode.com/problems/house-robber/)
