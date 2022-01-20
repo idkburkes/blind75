@@ -1,11 +1,11 @@
 
-# 36/75 Completed #
+# 38/75 Completed #
 - [ ] Array (10)
 - [ ] Binary (5)
 - [ ] Dynamic Programming (11)
 - [ ] Graph (8)
 - [ ] Interval (5)
-- [ ] Linked-List (6)
+- [X] Linked-List (6)
 - [ ] Matrix (4)
 - [ ] String (10)
 - [ ] Tree (14)
@@ -155,7 +155,7 @@ In addition, you should have a good grasp on common algorithms such as:
 - [X] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 - [X] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 - [X] [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
-- [ ] [Reorder List](https://leetcode.com/problems/reorder-list/)
+- [X] [Reorder List](https://leetcode.com/problems/reorder-list/)
 
 ---
 
@@ -171,7 +171,7 @@ In addition, you should have a good grasp on common algorithms such as:
 ## String
 
 - [X] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
-- [ ] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
+- [X] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - [ ] [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 - [ ] [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - [ ] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
