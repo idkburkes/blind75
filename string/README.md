@@ -9,9 +9,9 @@
 - [X] [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - [X] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [ ] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
-- [ ] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
-- [ ] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
-- [ ] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+- [X] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+- [X] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+- [X] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - [ ] [Encode and Decode Strings (Leetcode Premium)](https://leetcode.com/problems/encode-and-decode-strings/)
 
 ### Group Anagrams ###
@@ -28,3 +28,6 @@ class Solution:
 
 
 ```
+
+### Palindromic Substrings ###
+I've got solution to palindromic substring problems that are currently O(N^2) time and space. I will have to do some research in the future to optimize these

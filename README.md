@@ -1,5 +1,5 @@
 
-# 43/75 Completed #
+# 46/75 Completed #
 - [ ] Array (10)
 - [ ] Binary (5)
 - [X] Dynamic Programming (11)
@@ -71,6 +71,14 @@ In addition, you should have a good grasp on common algorithms such as:
 - Depth-first search
 - Binary search
 - Recursion
+
+### Regex ###
+```python 
+import re
+
+# Use '[^a-zA-Z0-9]' for only alphanumeric
+string = re.sub('[^a-zA-Z0-9]', '', string)
+```
 
 
 ## Important Links:
@@ -176,9 +184,9 @@ In addition, you should have a good grasp on common algorithms such as:
 - [X] [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - [X] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [ ] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
-- [ ] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
-- [ ] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
-- [ ] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+- [X] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+- [X] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+- [X] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - [ ] [Encode and Decode Strings (Leetcode Premium)](https://leetcode.com/problems/encode-and-decode-strings/)
 
 ---
