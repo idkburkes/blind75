@@ -1,5 +1,5 @@
 
-# 47/75 Completed #
+# 50/75 Completed #
 - [ ] Array (10)
 - [ ] Binary (5)
 - [X] Dynamic Programming (11)
@@ -97,11 +97,11 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 - [X] [Two Sum](https://leetcode.com/problems/two-sum/)
 - [X] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - [X] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
-- [ ] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+- [X] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 - [X] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
-- [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
-- [ ] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- [X] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+- [X] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - [X] [3Sum](https://leetcode.com/problems/3sum/)
 - [X] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
