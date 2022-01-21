@@ -82,6 +82,54 @@ class Solution:
         return dp[0][0]
 ```
 
+
+### Coin Change ###
+Coin change uses 1D DP array
+We initialized the array with MAX_VALUE to mark them as untraversed. Each index in the dp array represents an amount and the value of dp[i] represents the minimum amount of coins it takes to reach that amount. We start from index 0 the base case until we reach the final index which is the original problem 
+
+For every coin in coins, if it's value is less than amount that means we can get to that amount with 1 coin. Go through DP array and populate those indices with 1
+
+Our final nested foor loop with time complexity O(amount * n) where n is the amount of coins is what fills dp array with bottom-up approach. The inner loop will check every coin at every index, if the coins value can fit into the current index amount then we'll set the dp[i] to be the min between its current value or dp[i-coin]+1 <- this means that we're adding the current coin to the min amount of coins needed before this coin was added. Idk if thats confusing but the code is pretty short and clear.
+
+```python
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        if not coins or len(coins) == 0:
+            return -1
+        elif amount == 0:
+            return 0
+        
+        dp = [float('inf') for i in range(amount+1)]
+        for i in range(len(coins)):
+            if coins[i] <= amount:
+                dp[coins[i]] = 1
+                
+        for i in range(amount+1):
+            for coin in coins:
+                if i-coin >= 0:
+                    dp[i] = min(dp[i], dp[i-coin]+1)
+        return -1 if dp[-1] == float('inf') else dp[-1]
+    
+    # Here is the space optimized version we'll be able to use
+    # The logic here is that we only need the previous two numbers
+    # to continue calculating our aswer, so intead of maintaining the
+    # entire array, we'll just keep last 2 in variables
+    def robIterativeSpaceOptimized(self, nums: List[int]) -> int:
+        N = len(nums)
+        if nums is None or N == 0:
+            return 0
+        elif N == 1:
+            return nums[0]
+        
+        dp = [0] * N
+        a = nums[0]
+        b = max(nums[0],nums[1])
+            
+        for i in range(2,N):
+            c = max(b, nums[i]+a)
+            a = b
+            b = c   
+        return b
+```
 ### How to approach most DP problems ###
 
 Find recursive relation
