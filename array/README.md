@@ -10,7 +10,7 @@
 - [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 - [ ] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - [X] [3Sum](https://leetcode.com/problems/3sum/)
-- [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+- [X] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
 
 Common Patterns in Array problems
@@ -19,3 +19,26 @@ Common Patterns in Array problems
 - Sliding Window/Two pointers
 ## Kadane's Algorithm (Maximum subarray)
 [![Kadane's Algorithm](./kadanes_algorithm.png)](https://www.youtube.com/watch?v=jnoVtCKECmQ)
+
+
+### Container with most water ###
+Pretty easy two pointer problem.
+
+```Python
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        if len(height) == 2:
+            return min(height)
+      
+        maxarea, left, right = 0, 0, n-1
+        while left < right:
+            minh = min(height[left], height[right])
+            dist = right - left 
+            maxarea = max(maxarea, minh * dist)
+            if height[left] <= height[right]:
+                left += 1
+            else:
+                right -= 1
+        return maxarea     
+
+```
