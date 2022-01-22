@@ -1,6 +1,6 @@
 
-# 50/75 Completed #
-- [ ] Array (10)
+# 51/75 Completed #
+- [X] Array (10)
 - [ ] Binary (5)
 - [X] Dynamic Programming (11)
 - [ ] Graph (8)
@@ -99,7 +99,7 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 - [X] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - [X] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 - [X] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
-- [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
+- [X] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - [X] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 - [X] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - [X] [3Sum](https://leetcode.com/problems/3sum/)

@@ -6,7 +6,7 @@
 - [X] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - [X] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 - [X] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
-- [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
+- [X] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - [X] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 - [X] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - [X] [3Sum](https://leetcode.com/problems/3sum/)
@@ -60,6 +60,22 @@ class Solution:
             res[i] = res[i] * nums[i+1]
             nums[i] = nums[i] * nums[i+1]
             
+        return res
+```
+
+### Maximum Product Subarray ###
+This is a dynamic programming approach where we keep track of the current max and current min which
+is the product of all the numbers seen so far. Its linear O(n) time and O(1) space. Keeping track of the current min allows us to ignore products by 0, it also gives us large negative numbers so if we have a large negative number and its multiplied by another negative number then that becomes the new max
+```python
+    def maxProduct(self, nums: List[int]) -> int:
+        curMax, curMin = 1,1
+        res = nums[0]
+        
+        for num in nums:
+            vals = (num, num * curMax, num * curMin)
+            curMax, curMin = max(vals), min(vals)
+            res = max(curMax, res)
+        
         return res
 ```
 
