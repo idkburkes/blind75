@@ -22,7 +22,7 @@
 ![build-tree](./build-tree.png)
  
  Image shows how the preorder will always have the root node at the front, while the inorder traversal will split the tree into a left half and a right half. The problem is solved with a simple recursive solution
- ```
+ ```python
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
         if inorder:
             i = inorder.index(preorder.pop(0))
@@ -36,7 +36,7 @@
 ### isSubtree ###
 For determining if a tree contains a subtree, it is useful to use an auxilliary function that looks like this. Here we'll check if the current node vals are the same, as well as all the children nodes 
 
-```  
+```python
  def isMatch(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         if p is None or q is None:
             return p == q
@@ -45,7 +45,7 @@ For determining if a tree contains a subtree, it is useful to use an auxilliary 
 
 ### Lowest Common Ancestor ###
 Remember to use the sorting property of binary search trees to your advantage. An iterative solution to lowest common ancestor
-```
+```python
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         while root:
             if root.val > p.val and root.val > q.val:
@@ -59,7 +59,7 @@ Remember to use the sorting property of binary search trees to your advantage. A
 ### Validate Binary Search Tree ##
 Keep track of a lessThan and greaterThan for each recursive call to the left child and right child
 
-```
+```python
     def isValidBST(self, root: Optional[TreeNode], lessThan = float('inf'), greaterThan = -float('inf')) -> bool:
         if not root:
             return True
@@ -74,7 +74,7 @@ Keep track of a lessThan and greaterThan for each recursive call to the left chi
 I should be comfortable using this pattern for iterative inorder traversal in trees.
 The key here is to use a stack, what I got tripped up on was how to evaluate the right side of subtrees. The solution is to make the last line in the outer while loop ```cur = cur.right```. What this does is performs inorder traversal but also skips to the top of the stack if ```cur.right``` is null 
 
-```
+```python
 def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         stack = []
         count = 0
