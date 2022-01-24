@@ -4,7 +4,7 @@
 
 - [X] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - [X] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
-- [ ] [Rotate Image](https://leetcode.com/problems/rotate-image/)
+- [X] [Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [ ] [Word Search](https://leetcode.com/problems/word-search/)
 
 ---
@@ -67,4 +67,32 @@ The solution for this approach is pretty straight forward. We'll keep track of a
                 res.append(matrix[row][col])
         
         return res
+```
+
+### Rotate Image ###
+The solution is to think about this rotation as swapping four values at a time. First we start in the outer square of the matrix and move inwards using the same iterative approach. The first rotation will always be rotation the four corners clockwise. We have to store a few of these in temp variables as we rotate them accordingly. We'll perform 1 less than than current out squares length rotations. After all values have been rotated in the outer square me increment left and right to move inwards and perform the same rotations
+
+```python
+    def rotate(self, matrix: List[List[int]]) -> None:
+        l, r = 0, len(matrix) - 1
+        
+        while l < r:
+            t, b = l, r
+            for i in range(r-l):    
+                # Top row to right column
+                top_right = matrix[t+i][r]
+                matrix[t+i][r] = matrix[t][l+i]
+        
+                # Right column to bottom row
+                bottom_right = matrix[b][r-i]
+                matrix[b][r-i] = top_right
+               
+                # Bottom row to left column
+                bottom_left = matrix[b-i][l]
+                matrix[b-i][l] = bottom_right
+             
+                # Left column to top row
+                matrix[t][l+i] = bottom_left
+            l += 1
+            r -= 1
 ```
