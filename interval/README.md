@@ -3,7 +3,7 @@
 
 - [X] [Insert Interval](https://leetcode.com/problems/insert-interval/)
 - [X] [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-- [ ] [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
+- [X] [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 - [ ] [Meeting Rooms (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms/)
 - [ ] [Meeting Rooms II (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms-ii/)
 
@@ -56,4 +56,27 @@ Remember this pattern ```return left + [[start, end]] + right ``` where left&rig
                 start = min(start, interval[0])
                 end = max(end, interval[1])
         return left + [[start, end]] + right
+```
+
+### Non Overlapping Intervals ###
+I used a greedy algo approach for this. I sorted intervals by start value, then iterated the list of all intervals.
+If there was an overlap, I increment the result count then chose to keep the interval with the smallest end value
+
+```python
+    def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
+        intervals.sort(key = lambda x:x[0])
+        res, interval = 0, intervals[0]
+        
+        for i in range(1,len(intervals)):
+            start, end = interval[0], interval[1]
+            nextStart, nextEnd = intervals[i][0], intervals[i][1]    
+            if nextStart < end:
+                # overlap - determine which interval to keep
+                if nextEnd < end:
+                    interval = [nextStart, nextEnd]
+                res += 1
+            else:
+                # no overlap
+                interval = [nextStart, nextEnd]
+        return res
 ```

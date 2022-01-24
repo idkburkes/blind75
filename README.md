@@ -1,5 +1,5 @@
 
-# 53/75 Completed #
+# 54/75 Completed #
 - [X] Array (10)
 - [ ] Binary (5)
 - [X] Dynamic Programming (11)
@@ -150,7 +150,7 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 
 - [X] [Insert Interval](https://leetcode.com/problems/insert-interval/)
 - [X] [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-- [ ] [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
+- [X] [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 - [ ] [Meeting Rooms (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms/)
 - [ ] [Meeting Rooms II (Leetcode Premium)](https://leetcode.com/problems/meeting-rooms-ii/)
 
