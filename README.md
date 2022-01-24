@@ -6,7 +6,7 @@
 - [ ] Graph (8)
 - [ ] Interval (5)
 - [X] Linked-List (6)
-- [ ] Matrix (4)
+- [X] Matrix (4)
 - [ ] String (10)
 - [ ] Tree (14)
 - [X] Heap (3)
@@ -172,7 +172,7 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 - [X] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - [X] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 - [X] [Rotate Image](https://leetcode.com/problems/rotate-image/)
-- [ ] [Word Search](https://leetcode.com/problems/word-search/)
+- [X] [Word Search](https://leetcode.com/problems/word-search/)
 
 ---
 

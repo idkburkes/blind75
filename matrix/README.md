@@ -5,7 +5,7 @@
 - [X] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - [X] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 - [X] [Rotate Image](https://leetcode.com/problems/rotate-image/)
-- [ ] [Word Search](https://leetcode.com/problems/word-search/)
+- [X] [Word Search](https://leetcode.com/problems/word-search/)
 
 ---
 
@@ -95,4 +95,45 @@ The solution is to think about this rotation as swapping four values at a time. 
                 matrix[t][l+i] = bottom_left
             l += 1
             r -= 1
+```
+
+### Word Search ###
+Here is my iterative dfs solution. Use this example as a reference for how to handle dfs backtracking for iterative solutions.
+Notice how I'm traversing the matrix to find all starting points and creating a new stack at each start point.
+After each node has been marked as visited we also add a 'clone' of this node to the stack but marked as a backtracking node. This way when we pop it off the stack again on the backtracking portion we can remove it from the set of visited nodes so that it can be used again in the future.
+
+```python
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        m, n = len(board), len(board[0])
+        neighbors = [(0,-1),(0,1),(-1,0),(1,0)]
+        
+        for i in range(m):
+            for j in range(n):
+                if board[i][j] == word[0]:
+                    stack = []
+                    stack.append((i,j,0,False))
+                    visited = set()
+                
+                    while len(stack):
+                        row, col, index, backtrack = stack.pop()
+                        if backtrack: # skip this node if it is marked as backtracking node
+                            visited.remove((row, col))
+                            continue
+                        if index == len(word) - 1: #at this point we have found our word
+                            return True
+
+                        # Mark as visited and add backtracking node
+                        visited.add((row, col))
+                        stack.append((row, col, index, True))
+                    
+                        for neighbor in neighbors:
+                            dx, dy = neighbor
+                            x, y = row + dx, col + dy
+                            if (x,y) in visited: # Don't check neighbors if this node has been seen
+                                continue
+                            if x >= 0 and x < m and y >= 0 and y < n and board[x][y] == word[index+1]:
+                                stack.append((x,y,index+1,False))
+                                    
+        return False     
 ```
