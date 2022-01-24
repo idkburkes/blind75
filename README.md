@@ -1,5 +1,5 @@
 
-# 54/75 Completed #
+# 55/75 Completed #
 - [X] Array (10)
 - [ ] Binary (5)
 - [X] Dynamic Programming (11)
@@ -170,7 +170,7 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 ## Matrix
 
 - [X] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
-- [ ] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+- [X] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 - [ ] [Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [ ] [Word Search](https://leetcode.com/problems/word-search/)
 
