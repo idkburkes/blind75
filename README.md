@@ -1,5 +1,5 @@
 
-# 57/75 Completed #
+# 58/75 Completed #
 - [X] Array (10)
 - [ ] Binary (5)
 - [X] Dynamic Programming (11)
@@ -183,7 +183,7 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 - [ ] [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 - [X] [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - [X] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
-- [ ] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+- [X] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 - [X] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [X] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 - [X] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
