@@ -8,7 +8,7 @@
 | [Reverse Words in String](https://leetcode.com/problems/reverse-words-in-a-string/) | ??  | Two pointes | Medium |
 | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) | Amazon | BFS | Medium |
 | [Max Units on Truck](https://leetcode.com/problems/maximum-units-on-a-truck/) | Amazon | Heap   | Easy |
-| []() |  |   | Easy/Medium/Hard |
+| [Minimum Cost to connect sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | Amazon | Heap | Medium |
 | []() |  |   | Easy/Medium/Hard |
 | []() |  |   | Easy/Medium/Hard |
 | []() |  |   | Easy/Medium/Hard |
