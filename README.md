@@ -1,5 +1,5 @@
 
-# 60/75 Completed #
+# 61/75 Completed #
 - [X] Array (10)
 - [ ] Binary (5)
 - [X] Dynamic Programming (11)
@@ -109,7 +109,7 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 
 ## Binary
 
-- [ ] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
+- [X] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [X] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [X] [Counting Bits](https://leetcode.com/problems/counting-bits/)
 - [ ] [Missing Number](https://leetcode.com/problems/missing-number/)
