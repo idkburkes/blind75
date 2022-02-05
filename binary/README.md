@@ -5,7 +5,7 @@
 - [X] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [X] [Counting Bits](https://leetcode.com/problems/counting-bits/)
 - [X] [Missing Number](https://leetcode.com/problems/missing-number/)
-- [ ] [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
+- [X] [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 
 ---
 
@@ -96,5 +96,15 @@ def missingNumber(self, nums: List[int]) -> int:
     for i in range(len(nums)):
         res ^= nums[i]
         res ^= i+1
+    return res
+```
+
+### Reverse bits ###
+```python
+def reverseBits(self, n: int) -> int:
+    res = 0
+    for i in range(32):
+        bit = (n >> i) & 1
+        res = res | (bit << (31 - i))
     return res
 ```

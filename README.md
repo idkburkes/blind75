@@ -1,7 +1,7 @@
 
-# 62/75 Completed #
+# 63/75 Completed #
 - [X] Array (10)
-- [ ] Binary (5)
+- [X] Binary (5)
 - [X] Dynamic Programming (11)
 - [ ] Graph (8)
 - [X] Interval (5)
@@ -113,7 +113,7 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 - [X] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [X] [Counting Bits](https://leetcode.com/problems/counting-bits/)
 - [X] [Missing Number](https://leetcode.com/problems/missing-number/)
-- [ ] [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
+- [X] [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 
 ---
 
