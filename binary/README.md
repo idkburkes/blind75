@@ -4,7 +4,7 @@
 - [X] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [X] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [X] [Counting Bits](https://leetcode.com/problems/counting-bits/)
-- [ ] [Missing Number](https://leetcode.com/problems/missing-number/)
+- [X] [Missing Number](https://leetcode.com/problems/missing-number/)
 - [ ] [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 
 ---
@@ -83,4 +83,18 @@ def countBitsOptimal(self, n: int) -> List[int]:
     for i in range(1, n+1):
         dp[i] = dp[i & (i-1)] + 1
     return dp
+```
+
+### Missing Number ###
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+This is a similar question to what was taught in Grokking the coding interview. Originally we were given a list full of duplicate numbers with only one number missing a pair. If you start with 0 and XOR by each number in the list, the remaining number will be whatever was leftover and didn't get canceled out by its pair. We can use this solution pattern here, if for each number we also xor the result with the current index then at the end the only number that won't be XOR'd with its pair is the number thats missing in the range 
+
+```python
+def missingNumber(self, nums: List[int]) -> int:
+    res = 0
+    for i in range(len(nums)):
+        res ^= nums[i]
+        res ^= i+1
+    return res
 ```
