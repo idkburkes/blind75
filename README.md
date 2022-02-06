@@ -1,5 +1,5 @@
 
-# 63/75 Completed #
+# 66/75 Completed #
 - [X] Array (10)
 - [X] Binary (5)
 - [X] Dynamic Programming (11)
@@ -135,14 +135,14 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 
 ## Graph
 
-- [ ] [Clone Graph](https://leetcode.com/problems/clone-graph/)
+- [X] [Clone Graph](https://leetcode.com/problems/clone-graph/)
 - [X] [Course Schedule](https://leetcode.com/problems/course-schedule/)
 - [X] [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 - [X] [Number of Islands](https://leetcode.com/problems/number-of-islands/)
-- [ ] [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+- [X] [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - [ ] [Alien Dictionary (Leetcode Premium)](https://leetcode.com/problems/alien-dictionary/)
 - [ ] [Graph Valid Tree (Leetcode Premium)](https://leetcode.com/problems/graph-valid-tree/)
-- [ ] [Number of Connected Components in an Undirected Graph (Leetcode Premium)](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+- [X] [Number of Connected Components in an Undirected Graph (Leetcode Premium)](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
 
 ---
 
