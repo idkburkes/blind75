@@ -1,5 +1,5 @@
 
-# 66/75 Completed #
+# 67/75 Completed #
 - [X] Array (10)
 - [X] Binary (5)
 - [X] Dynamic Programming (11)
@@ -141,7 +141,7 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 - [X] [Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - [X] [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - [ ] [Alien Dictionary (Leetcode Premium)](https://leetcode.com/problems/alien-dictionary/)
-- [ ] [Graph Valid Tree (Leetcode Premium)](https://leetcode.com/problems/graph-valid-tree/)
+- [X] [Graph Valid Tree (Leetcode Premium)](https://leetcode.com/problems/graph-valid-tree/)
 - [X] [Number of Connected Components in an Undirected Graph (Leetcode Premium)](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
 
 ---

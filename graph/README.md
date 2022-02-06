@@ -6,7 +6,7 @@
 - [X] [Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - [X] [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - [ ] [Alien Dictionary (Leetcode Premium)](https://leetcode.com/problems/alien-dictionary/)
-- [ ] [Graph Valid Tree (Leetcode Premium)](https://leetcode.com/problems/graph-valid-tree/)
+- [X] [Graph Valid Tree (Leetcode Premium)](https://leetcode.com/problems/graph-valid-tree/)
 - [X] [Number of Connected Components in an Undirected Graph (Leetcode Premium)](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
 
 The two options for optimal graph problems are BFS with a Queue or an Iterative DFS with Stack (recursive DFS solutions are rarely optimal because of limitations on recursive call stack)
@@ -118,4 +118,37 @@ class Solution:
         for c in trail:
             parents[c] = node
         return node
+```
+
+
+## Graph Valid Tree
+```python
+class Solution:
+    def validTree(self, n: int, edges: List[List[int]]) -> bool:
+        if len(edges) != n - 1: return False
+        parents = dict()
+        for i in range(n):
+            parents[i] = i
+            
+        def find(x, parents):
+            node = x
+            trail = [node]
+            while parents[node] != node:
+                node = parents[node]
+                trail.append(node)
+            for t in trail:
+                parents[t] = node
+            return node
+        
+        for edge in edges:
+            root1 = find(edge[0], parents)
+            root2 = find(edge[1], parents)
+            # If these two nodes already have the same root then there is a cycle
+            if root1 == root2:
+                return False
+            
+            # Put these nodes in the same connected component
+            parents[root1] = parents[root2]
+                
+        return True
 ```
