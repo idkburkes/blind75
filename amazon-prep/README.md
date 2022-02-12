@@ -15,5 +15,5 @@
 | [Max Area of Cake after horizontal and vertical cuts](https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/) | Array | Medium |
 | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) |  ?   | Medium |
 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | Graph / BFS | Medium |
-| []() |     |  |
+| [Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/) | Trie | Medium |
 
