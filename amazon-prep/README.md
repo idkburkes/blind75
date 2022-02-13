@@ -77,4 +77,5 @@ We started in a garage, but we're not there anymore. We are big, we impact the w
 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | Graph / BFS | Medium |
 | [Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/) | Trie | Medium |
 | [Analyze user website visit pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/) | This problem sucks. Zip(), itertools.combinations(), custom sorting key | Medium | 
+| [Binary Tree Max Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | DFS | Hard |
 
