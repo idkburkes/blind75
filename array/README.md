@@ -20,6 +20,8 @@ Common Patterns in Array problems
 ## Kadane's Algorithm (Maximum subarray)
 [![Kadane's Algorithm](./kadanes_algorithm.png)](https://www.youtube.com/watch?v=jnoVtCKECmQ)
 
+Solving maximum subarry requires us to keep track of a "current" subarray sum. We can handle the negative numbers by setting current equal to the max between the ith number and the current subarray sum + the ith number. If the subarray sum is negative this essentially moves the subarray forward to the current number and begins trying to find another max from that point.  
+
 
 ### Container with most water ###
 Pretty easy two pointer problem.
