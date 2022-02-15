@@ -1,5 +1,5 @@
 
-# 67/75 Completed #
+# 68/75 Completed #
 - [X] Array (10)
 - [X] Binary (5)
 - [X] Dynamic Programming (11)
@@ -195,7 +195,7 @@ string = re.sub('[^a-zA-Z0-9]', '', string)
 - [X] [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 - [X] [Same Tree](https://leetcode.com/problems/same-tree/)
 - [X] [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
-- [ ] [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+- [X] [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 - [X] [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 - [ ] [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 - [X] [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
