@@ -74,4 +74,93 @@ def count_change(denominations, total):
 
   return dp[n-1][total]
 
+
+# Problem Statement - Minimum Coin Change
+# Given a number array to represent different coin denominations and a total amount ‘T’,
+# we need to find the minimum number of coins needed to make a change for ‘T’.
+# We can assume an infinite supply of coins, therefore, each coin can be chosen multiple times.
+
+# Example 1:
+# Denominations: {1,2,3}
+# Total amount: 5
+# Output: 2
+# Explanation: We need a minimum of two coins {2,3} to make a total of '5'
+
+# Example 2:
+# Denominations: {1,2,3}
+# Total amount: 11
+# Output: 4
+# Explanation: We need a minimum of four coins {2,3,3,3} to make a total of '11'
+
+
+# This problem has a similar approach to the last problem, except instead of optimizing for max value
+# we are checking for the minimum value. We can initialize the dp array with infinity so we can use math.min to make comparisons
+# Something I messed up on my first run-through of this problem was remembering to use the current row for calculating the include
+# value. This is characteristic of all Unbounded Knapsack problems and this is how its different than Knapsack 0/1.
+def count_change(denominations, total):
+  n = len(denominations)
+  dp = [[float('inf') for col in range(total + 1)] for row in range(n)]
+
+  # initialize first column to 0
+  for i in range(n):
+    dp[i][0] = 0
+    
+  for i in range(n):
+    for j in range(1,total+1):
+      include = exclude = float('inf')
+      if i > 0:
+        exclude = dp[i-1][j]  
+      if j >= denominations[i] and dp[i][j - denominations[i]] != float('inf'):
+        include = dp[i][j - denominations[i]] + 1
+      
+      dp[i][j] = min(include, exclude)
+      
+  return dp[n-1][total] if dp[n-1][total] != float('inf') else -1
+
+# Problem Statement - Maximum Ribbon Cut
+# Given a number array to represent possible ribbon lengths and a total ribbon length ‘n,’
+# we need to find the maximum number of pieces that the ribbon can be cut into.
+
+# Example 1:
+# n: 5
+# Ribbon Lengths: {2,3,5}
+# Output: 2
+# Explanation: Ribbon pieces will be {2,3}.
+
+# Example 2:
+# n: 7
+# Ribbon Lengths: {2,3}
+# Output: 3
+# Explanation: Ribbon pieces will be {2,2,3}.
+
+# Example 3:
+# n: 13
+# Ribbon Lengths: {3,5,7}
+# Output: 3
+# Explanation: Ribbon pieces will be {3,3,7}.
   
+
+def count_ribbon_pieces(ribbonLengths, total):
+  
+  n = len(ribbonLengths)
+  dp = [[-1 for col in range(total+1)] for row in range(n)]
+
+  # populate the total=0 columns, as we don't need any ribbon to make zero total
+  for i in range(n):
+    dp[i][0] = 0
+
+  for i in range(n):
+    for j in range(1,total + 1):
+      include = exclude = -1
+
+      # exclude the ribbon
+      if i > 0:
+        exclude = dp[i-1][j]
+
+       # include the ribbon and check if the remaining length can be cut into available lengths
+      if j >= ribbonLengths[i] and dp[i][j - ribbonLengths[i]] != -1:
+        include = dp[i][j - ribbonLengths[i]] + 1
+
+      dp[i][j] = max(include, exclude)
+  
+  return dp[n-1][total]

@@ -6,7 +6,7 @@
 
 1. Coding
     - [ ] Finish Blind75 List
-    - [ ] Finish Grokking the Coding Interview
+    - [X] Finish Grokking the Coding Interview
     - [ ] Finish Grokking Dynamic Programming
     - [ ] Finish Sean Prashad's List (36 Easy/ 105 Medium / 30 Hard)
     - [ ] Finish top 30 Recent Google Tagged Problems (do this if interview is soon)
@@ -19,8 +19,10 @@
 
 3. System Design
     - [ ] Finish System Design Course from Educative
+    - [ ] System Design Primer
 
 ## Coding 
+- [Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview)
 - [Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)
 - [Sean Prashad's Leetcode Patterns](https://seanprashad.com/leetcode-patterns/)
 - [LeetCode - Detailed explanation of Dynamic Programming](https://leetcode.com/explore/learn/card/dynamic-programming/)
@@ -32,6 +34,7 @@
 
 - [Scalability and System Design for Developers](https://www.educative.io/path/scalability-system-design)
 - [25 Google System Design Interview Questions](https://www.interviewkickstart.com/interview-questions/google-system-design-interview-questions)
+- [System Design Primer](https://github.com/donnemartin/system-design-primer)
 
 
 ## Helpful Resources ##
