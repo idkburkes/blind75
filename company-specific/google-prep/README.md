@@ -1,5 +1,5 @@
 
-![google-tech-lead](./google-tech-lead.jpg)
+![google-tech-lead](./images/google-tech-lead.jpg)
 
 
 ## Google Prep Plan ##
@@ -48,28 +48,40 @@
 
 | Problem    | Pattern | Difficulty |
 | ----------- | ----------- |  ----------- | 
+| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Fast & Slow Pointer / Floyd's Cycle Detection Algorithm | Medium |
+| [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Fast & Slow Pointer / Floyd's Cycle Detection Algorithm | Medium |
 
 
 # Dynamic Programming Patterns
-Google loves asking DP questions
 
-- #1 Knapsack 0/1
-- #2 Unbounded Knapsack
-- #3 Fibonacci Numbers
-- #4 Palindromic Subsequence
-- #5 Longest Common Substring
+[dp](./images/dp.jpg)
+
+Google loves asking DP questions. Learn these common dynamic programming patterns.
+
+- [Knapsack 0/1](./grokking_dp/dp_unbounded_knapsack.py)
+- [Unbounded Knapsack](./grokking_dp/dp_unbounded_knapsack.py)
+- [Fibonacci Numbers](./grokking_dp/dp_fibonnaci_numbers.py)
+- [Palindromic Subsequence](./grokking_dp/dp_palindromic_subsequence.py)
+- [Longest Common Substring](./grokking_dp/dp_longest_common_substring.py)
 
 
 # Graph Algorithms
 
-Google loves asking graph problems
-## Dijkstra's Algorithm
+[graphs](./images/graphs.png)
 
-## Bellman Ford Algorithm
-## A* Shortest Path Algorithm
+Google loves asking graph problems. Learn these minimum spanning tree and shortest path graph algorithms.
+ 
+[Dijkstra's Algorithm]
 
-## Prim's Algorithm
-## Kruskal's Algorithm
+[Bellman Ford Algorithm]
+
+[A* Shortest Path Algorithm]
+
+[Prim's Algorithm]
+
+[Kruskal's Algorithm]
+
+
 
 
 
