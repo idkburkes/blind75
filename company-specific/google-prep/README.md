@@ -54,7 +54,7 @@
 
 # Dynamic Programming Patterns
 
-[dp](./images/dp.jpg)
+![dp](./images/dp.jpg)
 
 Google loves asking DP questions. Learn these common dynamic programming patterns.
 
@@ -67,7 +67,7 @@ Google loves asking DP questions. Learn these common dynamic programming pattern
 
 # Graph Algorithms
 
-[graphs](./images/graphs.png)
+![graphs](./images/graphs.png)
 
 Google loves asking graph problems. Learn these minimum spanning tree and shortest path graph algorithms.
  
