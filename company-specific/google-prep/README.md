@@ -50,6 +50,7 @@
 | ----------- | ----------- |  ----------- | 
 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Fast & Slow Pointer / Floyd's Cycle Detection Algorithm | Medium |
 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Fast & Slow Pointer / Floyd's Cycle Detection Algorithm | Medium |
+| [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Greedy BFS | Medium |
 
 
 # Dynamic Programming Patterns
@@ -71,15 +72,18 @@ Google loves asking DP questions. Learn these common dynamic programming pattern
 
 Google loves asking graph problems. Learn these minimum spanning tree and shortest path graph algorithms.
  
-[Dijkstra's Algorithm]
+[Dijkstra's Shortest Path Algorithm](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+- Does not work for graphs with negative weights
 
-[Bellman Ford Algorithm]
+[Bellman Ford Algorithm](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)
+- Slower than Dijkstra but can handle graphs with negative weights
+- Time Complexity O(VE)
 
-[A* Shortest Path Algorithm]
+[A* Search Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
 
-[Prim's Algorithm]
+[Prim's Minimum Spanning Tree](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
 
-[Kruskal's Algorithm]
+[Kruskal's Minimum Spanning Tree](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
 
 
 
