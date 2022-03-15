@@ -2,7 +2,7 @@
 ![google-tech-lead](./images/google-tech-lead.jpg)
 
 
-## Google Prep Plan ##
+# Google Prep Plan #
 
 1. Coding
     - [ ] Finish Blind75 List
@@ -36,13 +36,16 @@
 - [25 Google System Design Interview Questions](https://www.interviewkickstart.com/interview-questions/google-system-design-interview-questions)
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
 
+## Google Behavioral Interview
+- [Understanding Googeliness — How to Pass the Googliness Interview](https://jeffhsipe.medium.com/understanding-googelyness-4d61a70ada95)
+- [9 Behavioral Interview Questions Commonly Asked at the Google Interview](https://www.interviewkickstart.com/blog/google-behavioral-interview-questions-to-get-hired-at-google)
 
-## Helpful Resources ##
+## Other Helpful Resources ##
 
 [Google Software Engineer Interview](https://igotanoffer.com/blogs/tech/google-software-engineer-interview)
 [Cracking the google coding interview: The definitive prep guide](https://www.educative.io/blog/google-coding-interview)
 
-# Google Recent Tagged Questions #
+# Google Tagged Questions #
 
 [cscareers.dev](https://discord.gg/uXkVRhBqfX) Discord Server. Use the leetcode bot to find the questions that Google has asked recently.
 
