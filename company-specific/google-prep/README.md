@@ -51,7 +51,7 @@
 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Fast & Slow Pointer / Floyd's Cycle Detection Algorithm | Medium |
 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Fast & Slow Pointer / Floyd's Cycle Detection Algorithm | Medium |
 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Greedy BFS | Medium |
-
+| [Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/) | Sliding Window | Medium |
 
 # Dynamic Programming Patterns
 
