@@ -36,14 +36,13 @@
 - [25 Google System Design Interview Questions](https://www.interviewkickstart.com/interview-questions/google-system-design-interview-questions)
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
 
-## Google Behavioral Interview
-- [Understanding Googeliness — How to Pass the Googliness Interview](https://jeffhsipe.medium.com/understanding-googelyness-4d61a70ada95)
+## Google Behavioral Interview & General Interview Process
+- [Understanding Googleyness — How to Pass the Googleyness Interview](https://jeffhsipe.medium.com/understanding-googelyness-4d61a70ada95)
 - [9 Behavioral Interview Questions Commonly Asked at the Google Interview](https://www.interviewkickstart.com/blog/google-behavioral-interview-questions-to-get-hired-at-google)
+- [Google Software Engineer Interview](https://igotanoffer.com/blogs/tech/google-software-engineer-interview)
+- [Cracking the google coding interview: The definitive prep guide](https://www.educative.io/blog/google-coding-interview)
+- [Interviewing for Googleyness at Google](https://www.youtube.com/watch?v=uPjeKSDuoGw)
 
-## Other Helpful Resources ##
-
-[Google Software Engineer Interview](https://igotanoffer.com/blogs/tech/google-software-engineer-interview)
-[Cracking the google coding interview: The definitive prep guide](https://www.educative.io/blog/google-coding-interview)
 
 # Google Tagged Questions #
 
@@ -56,7 +55,9 @@
 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Greedy BFS | Medium |
 | [Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/) | Sliding Window | Medium |
 
-# Dynamic Programming Patterns
+
+# Miscellaneous Topics
+## Dynamic Programming Patterns
 
 ![dp](./images/dp.jpg)
 
@@ -69,7 +70,7 @@ Google loves asking DP questions. Learn these common dynamic programming pattern
 - [Longest Common Substring](./grokking_dp/dp_longest_common_substring.py)
 
 
-# Graph Algorithms
+## Graph Algorithms
 
 ![graphs](./images/graphs.png)
 
@@ -88,6 +89,19 @@ Google loves asking graph problems. Learn these minimum spanning tree and shorte
 
 [Kruskal's Minimum Spanning Tree](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
 
+## Sorting Algorithms
+
+![sorting](./images/Sorting-Algorithms.png)
+
+- [Selection Sort]
+- [Insertion Sort]
+- [Quick Sort]
+- [Merge Sort]
+- [Counting Sort]
+- [Radix Sort]
+- [Bubble Sort]
+- [Heap Sort]
+- [Tim Sort]
 
 
 
