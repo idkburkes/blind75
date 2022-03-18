@@ -76,32 +76,68 @@ Google loves asking DP questions. Learn these common dynamic programming pattern
 
 Google loves asking graph problems. Learn these minimum spanning tree and shortest path graph algorithms.
  
-[Dijkstra's Shortest Path Algorithm](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+Dijkstra's Shortest Path Algorithm
+- [Explanation](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+- [Implementation]
 - Does not work for graphs with negative weights
 
-[Bellman Ford Algorithm](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)
+Bellman Ford Algorithm
+- [Explanation](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)
+- [Implementation]
 - Slower than Dijkstra but can handle graphs with negative weights
 - Time Complexity O(VE)
 
-[A* Search Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
+A* Search Algorithm
+- [Explanation](https://www.geeksforgeeks.org/a-search-algorithm/)
+- [Implementation]
 
-[Prim's Minimum Spanning Tree](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
+Prim's Minimum Spanning Tree
+- [Explanation](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
+- [Implementation]
 
-[Kruskal's Minimum Spanning Tree](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
+Kruskal's Minimum Spanning Tree
+- [Explanation](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
+- [Implementation]
 
 ## Sorting Algorithms
 
 ![sorting](./images/Sorting-Algorithms.png)
 
-- [Selection Sort]
-- [Insertion Sort]
-- [Quick Sort]
-- [Merge Sort]
-- [Counting Sort]
-- [Radix Sort]
-- [Bubble Sort]
-- [Heap Sort]
-- [Tim Sort]
+Selection Sort 
+- [Explanation](https://www.geeksforgeeks.org/selection-sort/)
+- [Implementation]
+
+Insertion Sort
+- [Explanation](https://www.geeksforgeeks.org/insertion-sort/)
+- [Implementation](./sorting_algos/insertion_sort.py)
+
+Quick Sort
+- [Explanation](https://www.geeksforgeeks.org/quick-sort/)
+- [Implementation](./sorting_algos/quick_sort.py)
+
+Merge Sort
+- [Explanation](https://www.geeksforgeeks.org/merge-sort/)
+- [Implementation](./sorting_algos/merge_sort.py)
+
+Counting Sort
+- [Explanation](https://www.javatpoint.com/counting-sort)
+- [Implementation]
+
+Radix Sort
+- [Explanation](https://www.geeksforgeeks.org/radix-sort/)
+- [Implementation]
+
+Bubble Sort
+- [Explanation](https://www.geeksforgeeks.org/bubble-sort/)
+- [Implementation]
+
+Heap Sort
+- [Explanation](https://www.geeksforgeeks.org/heap-sort/)
+- [Implementation]
+
+TimSort
+- [Explanation](https://www.geeksforgeeks.org/timsort/)
+- [Implementation]
 
 
 
