@@ -336,17 +336,130 @@ def find_LRS_length_recursive(dp,  str, i1, i2):
 
   return dp[i1][i2]
 
-# Here is the bottom-up solution with O(n^2)
+# Here is the bottom-up solution with O(n^2) time complexity
 def find_LRS_length(s):
   n = len(s)
+  # the longest repeating subsequence we compare chars in a string to other chars in the same string so its an NxN matrix
   dp = [[0 for col in range(n+1)] for row in range(n+1)]
   LRS = 0
   for i in range(1,n+1):
     for j in range(1,n+1):
       if s[i-1] == s[j-1] and i != j:
+        # If its a match with different indices then the length is incremented by 1 + the max from the previous letter in "both" strings
         dp[i][j] = dp[i-1][j-1] + 1
       else:
+        # If its not a valid match, then we take the max from either 1 char back in the column's string or 1 char back in the row's string
         dp[i][j] = max(dp[i-1][j], dp[i][j-1])
       LRS = max(LRS, dp[i][j])
 
   return LRS
+
+
+
+# Problem Statement - Subsequence Pattern Matching
+# Given a string and a pattern, write a method to count the number of times the pattern appears in the string as a subsequence.
+#
+# Example 1: Input: string: “baxmx”, pattern: “ax”
+# Output: 2
+# Explanation: {baxmx, baxmx}.
+#
+# Example 2:
+# Input: string: “tomorrow”, pattern: “tor”
+# Output: 4
+# Explanation: Following are the four occurences: {tomorrow, tomorrow, tomorrow, tomorrow}.
+#
+# Since we want to match all the subsequences of the given string, we can use a two-dimensional array to store our results. 
+# As mentioned above, we will be tracking separate indexes for the string and the pattern, so we will be doing two things for every value of strIndex and patIndex:
+# 1. If the character at the strIndex (in the string) matches the character at patIndex (in the pattern),
+#    the count of the SPM would be equal to the count of SPM up to strIndex-1 and patIndex-1.
+# 2. At every step, we can always skip a character from the string to try matching the remaining string with the pattern;
+#    therefore, we can add the SPM count from the indexes strIndex-1 and patIndex.
+
+def find_SPM_count(str, pat):
+  m = len(str)
+  n = len(pat)
+  # init extra row and column for empty subsequence and empty string in beginning
+  dp = [[0 for _ in range(n+1)] for _ in range(m+1)]
+
+  # all subsequences with empty pattern is a match
+  for i in range(m+1):
+    dp[i][0] = 1
+
+  for i in range(1, m+1):
+    for j in range(1, n+1):
+      # If chars match then the number of matches is the same as number of matches from previous chars in both
+      if str[i-1] == pat[j-1]:
+        dp[i][j] = dp[i-1][j-1]
+      # At every step we add the amount of matches for this char in the pattern
+      dp[i][j] += dp[i-1][j]
+
+  return dp[m][n]
+
+
+# Problem Statement - Longest Bitonic Subsequence
+# Given a number sequence, find the length of its Longest Bitonic Subsequence (LBS).
+# A subsequence is considered bitonic if it is monotonically increasing and then monotonically decreasing.
+
+# Example 1:
+# Input: {4,2,3,6,10,1,12}
+# Output: 5
+# Explanation: The LBS is {2,3,6,10,1}.
+
+# Example 2:
+# Input: {4,2,5,9,7,6,10,3,1}
+# Output: 7
+# Explanation: The LBS is {4,5,9,7,6,3,1}.
+
+# The solution is to find the longest increasing subsequence from each point then find the longest decreasing subsequence from each point.
+# The max sum of these from each point will give us the solution. Remember to substract 1 from the max sum so we don't include the current number twice
+# Also will have to remember that finding the longest decreasing subsequence is slightly different from LIS. 
+# We'll have to do the process in reverse, so we start from the last index and iterate towards the beginning of the array
+def find_LBS_length(nums):
+  n = len(nums)
+  # Longest increasing subsequence
+  lis = [1 for _ in range(n)]
+  # Longest decreasing subsequence
+  lds = [1 for _ in range(n)]
+
+  # find longest increasing subsequence from every point the beginning, start from the beginning
+  for i in range(n):
+    for j in range(i):
+      if nums[j] < nums[i]:
+        lis[i] = max(lis[i], lis[j] + 1)
+
+  # find longest decreasing subsequence from evrey point to the end, starting from the end
+  for i in range(n-1, -1, -1):
+    for j in range(i+1, n):
+      if nums[j] < nums[i]:
+        lds[i] = max(lds[i], lds[j] + 1)
+    
+  # find sum of LIS and LDS from each point
+  # the longest bitonic subsequence is the max sum
+  LBS = 1
+  for i in range(n):
+    # subtract 1 so you don't include the current number twice
+    LBS = max(lis[i] + lds[i] - 1, LBS)
+
+  return LBS
+
+
+# Problem Statement - Longest Alternating Subsequence
+# Given a number sequence, find the length of its Longest Alternating Subsequence (LAS).
+# A subsequence is considered alternating if its elements are in alternating order.
+#
+# A three element sequence (a1, a2, a3) will be an alternating sequence if its elements hold one of the following conditions:
+# {a1 > a2 < a3 } or { a1 < a2 > a3}. 
+# Example 1:
+# Input: {1,2,3,4}
+# Output: 2
+# Explanation: There are many LAS: {1,2}, {3,4}, {1,3}, {1,4}
+#
+# Example 2:
+# Input: {3,2,1,4}
+# Output: 3
+# Explanation: The LAS are {3,2,4} and {2,1,4}.
+#
+# Example 3:
+# Input: {1,3,2,4}
+# Output: 4
+# Explanation: The LAS is {1,3,2,4}.
