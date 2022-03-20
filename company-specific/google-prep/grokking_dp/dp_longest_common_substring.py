@@ -86,7 +86,6 @@ def longestCommonSubsequence(self, text1: str, text2: str) -> int:
     return res
 
 
-
 # Problem Statement - Minimum Deletions & Insertions to Transform a String into another
 # Given strings s1 and s2, we need to transform s1 into s2 by deleting and inserting characters.
 # Write a function to calculate the count of the minimum number of deletion and insertion operations.
@@ -463,3 +462,148 @@ def find_LBS_length(nums):
 # Input: {1,3,2,4}
 # Output: 4
 # Explanation: The LAS is {1,3,2,4}.
+#
+#
+# Detailed solution explanation
+# 1. We need to find an ascending and descending subsequence at every index.
+# 2. While finding the next element in the ascending order, if the number at the current index is bigger than the number at the previous index,
+#    we increment the count for a LAS up to the current index. But if there is a bigger LAS without including the number at the current index, we take that.
+# 3. Similarly for the descending order, if the number at the current index is smaller than the number at the previous index,
+#    we increment the count for a LAS up to the current index. But if there is a bigger LAS without including the number at the current index, we take that.
+
+# To find the largest LAS, we need to find all of the LAS for a number at index ‘i’ from all the previous numbers (i.e. number till index ‘i-1’).
+# We can use two arrays to store the length of LAS, one for ascending order and one for descending order. 
+# (Actually, we will use a two-dimensional array, where the second dimension will be of size two).
+
+# If ‘i’ represents the currentIndex and ‘j’ represents the previousIndex, our recursive formula would look like:
+
+# If nums[i] is bigger than nums[j] then we will consider the LAS ending at ‘j’ where the last two elements were in descending order =>
+#      if num[i] > num[j] => dp[i][0] = 1 + dp[j][1], if there is no bigger LAS for 'i'
+# If nums[i] is smaller than nums[j] then we will consider the LAS ending at ‘j’ where the last two elements were in ascending order =>
+#      if num[i] < num[j] => dp[i][1] = 1 + dp[j][0], if there is no bigger LAS for 'i'
+
+def find_LAS_length(nums):
+  
+  n = len(nums)
+  dp = [[1 for _ in range(n)] for _ in range(2)]
+
+  # [0][] first row is ascending index
+  # [1][] second row is descending index
+  for i in range(1,n):
+    for j in range(i): # this loop gives us O(n^2) time complexity
+      if nums[i] > nums[j]:
+        # if nums are ascending then increment from max length where numbers were last descending
+        dp[0][i] = max(dp[0][i], dp[1][j] + 1)
+      else:
+        # if nums are descending then increment from max length where numbers were last ascending
+        dp[1][i] = max(dp[1][i], dp[0][j] + 1)
+
+  # return the max length from either ascending or descending array
+  return max(dp[0][n-1], dp[1][n-1])
+
+# Problem Statement - Edit Distance
+# Given strings s1 and s2, we need to transform s1 into s2 by deleting, inserting, or replacing characters.
+# Write a function to calculate the count of the minimum number of edit operations.
+
+# Example 1:
+# Input: s1 = "bat"
+#      s2 = "but"
+# Output: 1
+# Explanation: We just need to replace 'a' with 'u' to transform s1 to s2.
+#
+# Example 2:
+# Input: s1 = "abdca"
+#      s2 = "cbda"
+# Output: 2
+# Explanation: We can replace first 'a' with 'c' and delete second 'c'.
+#
+# Example 3:
+# Input: s1 = "passpot"
+#      s2 = "ppsspqrt"
+# Output: 3 
+# Explanation: Replace 'a' with 'p', 'o' with 'q', and insert 'r'.
+
+# The key here is knowing that if the current letters match then we take the prev length from before each letter in both words
+# if the letters don't match, then we have to increment by the minimum between excluding the first word, excluding the second word,
+# or excluding both words, which technically counts as an "edit" operation.
+#
+# There are a couple edge cases we have to handle by init the first rows and columns with their index
+# this is for the base case that either word is empty
+#
+# https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/gx2QMvEorYY
+def editDistance(self, word1: str, word2: str) -> int:
+  m = len(word1)
+  n = len(word2)
+  
+  # if either string is empty, return the length of the other
+  if n * m == 0:
+      return n + m
+  
+  dp = [[0 for _ in range(n+1)] for _ in range(m+1)]
+  
+  # if word2 is empty we can remove all letters in word1
+  for i in range(m+1):
+      dp[i][0] = i
+  
+  # if word1 is empty we can add all letters in word2
+  for i in range(n+1):
+      dp[0][i] = i
+  
+  for i in range(1,m+1):
+      for j in range(1,n+1):
+          if word1[i-1] == word2[j-1]:
+              dp[i][j] = dp[i-1][j-1]
+          else:
+              dp[i][j] = 1 + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])
+  
+  return dp[m][n]
+
+  # Problem Statement - Strings Interweaving
+# Given three strings ‘m’, ‘n’, and ‘p’, write a method to find out if ‘p’ has been formed by interleaving ‘m’ and ‘n’. ‘p’
+# would be considered interleaving ‘m’ and ‘n’ if it contains all the letters from ‘m’ and ‘n’ and the order of letters is preserved too.
+
+# Example 1:
+# Input: m="abd", n="cef", p="abcdef"
+# Output: true
+# Explanation: 'p' contains all the letters from 'm' and 'n' and preserves their order too. 
+#
+# Example 2:
+# Input: m="abd", n="cef", p="adcbef"
+# Output: false
+# Explanation: 'p' contains all the letters from 'm' and 'n' but does not preserve the order. 
+#
+# Example 3:
+# Input: m="abc", n="def", p="abdccf"
+# Output: false
+# Explanation: 'p' does not contain all the letters from 'm' and 'n'. 
+#
+# Example 4:
+# Input: m="abcdef", n="mnop", p="mnaobcdepf"
+# Output: true
+# Explanation: 'p' contains all the letters from 'm' and 'n' and preserves their order too. 
+
+def find_SI(string1, string2,  interweaved):
+
+  m = len(interweaved)
+  n1 = len(string1)
+  n2 = len(string2)
+
+  dp1 = [[0 for _ in range(n1+1)] for _ in range(m+1)]
+  dp2 = [[0 for _ in range(n2+1)] for _ in range(m+1)]
+
+  for i in range(1,m+1):
+    # LCS for string1
+    for j in range(1,n1+1):
+      if interweaved[i-1] == string1[j-1]:
+        dp1[i][j] = 1 + dp1[i-1][j-1]
+      else:
+        dp1[i][j] = max(dp1[i][j-1], dp1[i-1][j])
+    # LCS for string2
+    for k in range(n2+1):
+      if interweaved[i-1] == string2[k-1]:
+        dp2[i][k] = 1 + dp2[i-1][k-1]
+      else:
+        dp2[i][k] = max(dp2[i-1][k], dp2[i][k-1])
+  
+  # Check if longest common subsequence for both strings is the entire string itself
+  return dp1[m][n1] == n1 and dp2[m][n2] == n2 and m == n1 + n2 
