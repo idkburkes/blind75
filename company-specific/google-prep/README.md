@@ -7,7 +7,7 @@
 1. Coding
     - [ ] Finish Blind75 List
     - [X] Finish Grokking the Coding Interview
-    - [ ] Finish Grokking Dynamic Programming
+    - [X] Finish Grokking Dynamic Programming
     - [ ] Finish Sean Prashad's List (36 Easy/ 105 Medium / 30 Hard)
     - [ ] Finish top 30 Recent Google Tagged Problems (do this if interview is soon)
 
@@ -54,6 +54,7 @@
 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Fast & Slow Pointer / Floyd's Cycle Detection Algorithm | Medium |
 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Greedy BFS | Medium |
 | [Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/) | Sliding Window | Medium |
+| [Edit Distance](https://leetcode.com/problems/edit-distance/) | DP - Longest Common Substring | Hard | 
 
 
 # Miscellaneous Topics
