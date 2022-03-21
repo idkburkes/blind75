@@ -55,6 +55,7 @@
 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Greedy BFS | Medium |
 | [Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/) | Sliding Window | Medium |
 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | DP - Longest Common Substring | Hard | 
+| [Minimum remove to make valid parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Stack with StringBuilder | Medium | 
 
 
 # Miscellaneous Topics
