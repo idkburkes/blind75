@@ -56,6 +56,7 @@
 | [Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/) | Sliding Window | Medium |
 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | DP - Longest Common Substring | Hard | 
 | [Minimum remove to make valid parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Stack with StringBuilder | Medium | 
+| [Number of connected components in undirected graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | Union Find | Medium |
 
 
 # Miscellaneous Topics
