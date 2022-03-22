@@ -57,6 +57,7 @@
 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | DP - Longest Common Substring | Hard | 
 | [Minimum remove to make valid parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Stack with StringBuilder | Medium | 
 | [Number of connected components in undirected graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | Union Find | Medium |
+| [Cheapest flight within K stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Dijkstra's Algorithm | Medium |
 
 
 # Miscellaneous Topics
@@ -77,7 +78,16 @@ Google loves asking DP questions. Learn these common dynamic programming pattern
 
 ![graphs](./images/graphs.png)
 
-Google loves asking graph problems. Learn these minimum spanning tree and shortest path graph algorithms.
+It's important to model the problem in a way that standard algorithms or their slight variations can be used for the solutions. Whenever we have a problem where we're given a bunch of entities and they have some sort of connections between them, more often than not it can be modeled as a graph problem. Once you've figured out that the question can be modeled as a graph problem, you then need to think about the various aspects of a graph i.e.
+
+directed vs undirected
+weighted vs unweighted
+cyclic vs acyclic
+
+Unweighted? -> Use BFS
+Weighted with only positive weights? -> Use Dijkstra's algorithm
+Negative weights? -> Use Bellman Ford
+
  
 Dijkstra's Shortest Path Algorithm
 - [Explanation](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
