@@ -58,6 +58,7 @@
 | [Minimum remove to make valid parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Stack with StringBuilder | Medium | 
 | [Number of connected components in undirected graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | Union Find | Medium |
 | [Cheapest flight within K stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Dijkstra's Algorithm | Medium |
+| [Minimum cost to reach city with discounts](https://leetcode.com/problems/minimum-cost-to-reach-city-with-discounts/) | Dijkstra's Algorithm | Medium |
 
 
 # Miscellaneous Topics
