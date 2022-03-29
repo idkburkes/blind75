@@ -18,3 +18,8 @@ I often forget got to sort 2D array by first element in Python. Try to rememeber
 | [Search in Rotated sorted array](https://leetcode.com/problems/search-in-rotated-sorted-array/solution/) | Binary search (find smallest value w b-search) | Medium |
 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/submissions/) | Sort intervals and use heap | Medium |
 | [Reverse words in a string](https://leetcode.com/problems/reverse-words-in-a-string/) | Two-pointer, in-place reversal | Medium | 
+| [Design Hashmap](https://leetcode.com/problems/design-hashmap/submissions/) | DS&A Design | Easy | 
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Kadane's Algorithm/ DP | Easy | 
+| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Heap / PriorityQueue | Hard |
+| [Course Schedule](https://leetcode.com/problems/course-schedule/) | Topological Sort with BFS | Medium | 
+
