@@ -22,4 +22,5 @@ I often forget got to sort 2D array by first element in Python. Try to rememeber
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Kadane's Algorithm/ DP | Easy | 
 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Heap / PriorityQueue | Hard |
 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Topological Sort with BFS | Medium | 
+| [Min Stack](https://leetcode.com/problems/min-stack/submissions/) | 2 Stacks | Easy | 
 
