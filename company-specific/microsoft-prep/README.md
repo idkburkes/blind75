@@ -4,6 +4,7 @@
 Microsoft is known for a lot of tree questions, so focus on that.
 
 I often forget got to sort 2D array by first element in Python. Try to rememeber this
+
 ```mylist.sort(key = lambda x:x[0]) ```
 
 
@@ -27,5 +28,9 @@ I often forget got to sort 2D array by first element in Python. Try to rememeber
 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Two-pointer | Easy(optimal solution is Medium imo) | 
 | [Binary Tree ZigZag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | BFS, deque | Medium | 
 | [Max Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | DFS | Hard | 
+| [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Similar to Grid Illumination | Medium | 
+| [Find the duplicate number](https://leetcode.com/problems/find-the-duplicate-number/) |  Floyd's Cycle Detection | Medium | 
+| [Product of array except self](https://leetcode.com/problems/product-of-array-except-self/submissions/) | DP | Medium | 
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | DP | Medium | 
 
 
