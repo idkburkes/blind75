@@ -35,3 +35,9 @@ I often forget got to sort 2D array by first element in Python. Try to rememeber
 | [Serialize and deserialize tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | BFS | Hard | 
 | [Find Minimum in rotated sorted array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary Search | Medium | 
 | [Subarray sum equals k](https://leetcode.com/problems/subarray-sum-equals-k/) | Similar to two-sum | Medium | 
+| [Parallel Courses](https://leetcode.com/problems/parallel-courses/) | BFS & Topological Sort | Medium | 
+
+
+
+## Behavioral Prep Links
+- [Why Microsoft? Interview Questions](https://www.interviewkickstart.com/interview-questions/why-microsoft-interview-questions)
