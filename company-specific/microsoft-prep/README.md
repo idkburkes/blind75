@@ -32,5 +32,6 @@ I often forget got to sort 2D array by first element in Python. Try to rememeber
 | [Find the duplicate number](https://leetcode.com/problems/find-the-duplicate-number/) |  Floyd's Cycle Detection | Medium | 
 | [Product of array except self](https://leetcode.com/problems/product-of-array-except-self/submissions/) | DP | Medium | 
 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | DP | Medium | 
-
-
+| [Serialize and deserialize tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | BFS | Hard | 
+| [Find Minimum in rotated sorted array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary Search | Medium | 
+| [Subarray sum equals k](https://leetcode.com/problems/subarray-sum-equals-k/) | Similar to two-sum | Medium | 
