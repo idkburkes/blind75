@@ -37,6 +37,12 @@ I often forget got to sort 2D array by first element in Python. Try to rememeber
 | [Subarray sum equals k](https://leetcode.com/problems/subarray-sum-equals-k/) | Similar to two-sum | Medium | 
 | [Parallel Courses](https://leetcode.com/problems/parallel-courses/) | BFS & Topological Sort | Medium |
 | [Populating the next right pointers in each node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | BFS & level-order traversal | Medium |  
+| [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | Math? | Easy | 
+| [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) | Heap | Medium | 
+| [Max number of balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | Store char freqs in hashmap | Easy | 
+| [Min changes to make alternating binary string](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | Alternating binary string only has 2 options for string of size n, count differences entre those | Easy |
+| [Max value after insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | Math | Medium | 
+
 
 
 
