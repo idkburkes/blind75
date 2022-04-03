@@ -42,6 +42,7 @@ I often forget got to sort 2D array by first element in Python. Try to rememeber
 | [Max number of balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | Store char freqs in hashmap | Easy | 
 | [Min changes to make alternating binary string](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | Alternating binary string only has 2 options for string of size n, count differences entre those | Easy |
 | [Max value after insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | Math | Medium | 
+| [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) | Walk in a spiral | Medium | 
 
 
 
