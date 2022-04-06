@@ -42,7 +42,14 @@ I often forget got to sort 2D array by first element in Python. Try to rememeber
 | [Max number of balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | Store char freqs in hashmap | Easy | 
 | [Min changes to make alternating binary string](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | Alternating binary string only has 2 options for string of size n, count differences entre those | Easy |
 | [Max value after insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | Math | Medium | 
-| [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) | Walk in a spiral | Medium | 
+| [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/) | Walk in a spiral | Medium |
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Binary Search | Medium |  
+| [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | Binary Search | Medium | 
+| [Single element in a sorted array](https://leetcode.com/problems/single-element-in-a-sorted-array/) | Binary Search | Medium | 
+| [Longest element with at most K distinct characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | Sliding Window | Medium | 
+| [Remove duplicates from sorted array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 2 pointers | Easy |
+| [Longest Happy String](https://leetcode.com/problems/longest-happy-string/) | Heap / Greedy Algo | Medium | 
+
 
 
 
