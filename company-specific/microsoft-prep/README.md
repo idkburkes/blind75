@@ -1,9 +1,7 @@
 # Microsoft Interview Prep
 
 
-Microsoft is known for a lot of tree questions, so focus on that.
-
-I often forget got to sort 2D array by first element in Python. Try to rememeber this
+I often forget how to sort 2D array by first element in Python. Try to rememeber this
 
 ```mylist.sort(key = lambda x:x[0]) ```
 
@@ -48,7 +46,13 @@ I often forget got to sort 2D array by first element in Python. Try to rememeber
 | [Single element in a sorted array](https://leetcode.com/problems/single-element-in-a-sorted-array/) | Binary Search | Medium | 
 | [Longest element with at most K distinct characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | Sliding Window | Medium | 
 | [Remove duplicates from sorted array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 2 pointers | Easy |
-| [Longest Happy String](https://leetcode.com/problems/longest-happy-string/) | Heap / Greedy Algo | Medium | 
+| [Longest Happy String](https://leetcode.com/problems/longest-happy-string/) | Heap / Greedy Algo | Medium |
+| [Copy list with random pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Deep-copy (nodes are key in hashmap copies are value) | Medium | 
+| [Three Sum](https://leetcode.com/problems/3sum/) | Two-sum with 2 pointers | Medium | 
+| [Find all Anagrams in a string](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Sliding Window with hashmap | Medium | 
+| [First unique character in a string](https://leetcode.com/problems/first-unique-character-in-a-string/) | Hashmap | Easy | 
+| [Decode String](https://leetcode.com/problems/decode-string/) | Parenthesis stack | Medium | 
+
 
 
 
