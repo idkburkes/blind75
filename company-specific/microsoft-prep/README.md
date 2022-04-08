@@ -52,6 +52,7 @@ I often forget how to sort 2D array by first element in Python. Try to rememeber
 | [Find all Anagrams in a string](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Sliding Window with hashmap | Medium | 
 | [First unique character in a string](https://leetcode.com/problems/first-unique-character-in-a-string/) | Hashmap | Easy | 
 | [Decode String](https://leetcode.com/problems/decode-string/) | Parenthesis stack | Medium | 
+| [H-index](https://leetcode.com/problems/h-index/) | nlogn Sort or Counting Sort | Medium | 
 
 
 
